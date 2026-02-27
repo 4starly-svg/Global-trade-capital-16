@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Global Trade Live</title>
+  <meta charset="UTF-8">
+  <title>Global Trade Capital</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Global Trade Live</h1>
-  <p>If you see this, the site is working.</p>
+
+<header>
+  <h1>Global Trade Capital</h1>
+  <button id="language-toggle">عربي</button>
+</header>
+
+<nav id="menu">
+  <button id="stocks-btn">Stocks</button>
+  <button id="crypto-btn">Crypto</button>
+  <button id="fx-btn">FX</button>
+</nav>
+
+<div id="tickers" class="ticker-bar"></div>
+
+<main>
+  <h2>Portfolio</h2>
+  <table id="portfolio-table">
+    <thead>
+      <tr><th>Asset</th><th>Quantity</th><th>Price</th><th>Total Value</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <section id="trade-section">
+    <button class="trade-btn">Buy</button>
+    <button class="trade-btn">Sell</button>
+  </section>
+</main>
+
+<footer>
+  <div class="bank-logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Bank_of_Libya_logo.png" alt="Bank of Libya">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Libyan_Bank_logo.png" alt="Libyan Bank">
+  </div>
+  <div class="contact">
+    <p>Phone: +218 123 456 789</p>
+    <p>Email: info@globaltrade.com</p>
+  </div>
+  <p>Disclaimer: This is a simulation for educational purposes only. No real money is involved.</p>
+</footer>
+
+<script src="stocks.js"></script>
+<script src="crypto.js"></script>
+<script src="fx.js"></script>
+<script src="main.js"></script>
+
 </body>
 </html>
