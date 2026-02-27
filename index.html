@@ -2,55 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Global Trade Capital</title>
+  <title>Global Trade Capital 16</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Global Trade Capital</h1>
-  <button id="language-toggle">عربي</button>
-</header>
+  <!-- HEADER -->
+  <header>
+    <h1>Global Trade Capital 16</h1>
+    <button id="language-toggle">عربي</button>
+  </header>
 
-<nav id="menu">
-  <button id="stocks-btn">Stocks</button>
-  <button id="crypto-btn">Crypto</button>
-  <button id="fx-btn">FX</button>
-</nav>
-
-<div id="tickers" class="ticker-bar"></div>
-
-<main>
-  <h2>Portfolio</h2>
-  <table id="portfolio-table">
-    <thead>
-      <tr><th>Asset</th><th>Quantity</th><th>Price</th><th>Total Value</th></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
-  <section id="trade-section">
-    <button class="trade-btn">Buy</button>
-    <button class="trade-btn">Sell</button>
-  </section>
-</main>
-
-<footer>
-  <div class="bank-logos">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Bank_of_Libya_logo.png" alt="Bank of Libya">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Libyan_Bank_logo.png" alt="Libyan Bank">
+  <!-- TICKER BAR -->
+  <div class="ticker-bar" id="tickers">
+    <!-- Stocks, Crypto, FX tickers will populate here -->
   </div>
-  <div class="contact">
-    <p>Phone: +218 123 456 789</p>
-    <p>Email: info@globaltrade.com</p>
-  </div>
-  <p>Disclaimer: This is a simulation for educational purposes only. No real money is involved.</p>
-</footer>
 
-<script src="stocks.js"></script>
-<script src="crypto.js"></script>
-<script src="fx.js"></script>
-<script src="main.js"></script>
+  <!-- NAVIGATION -->
+  <div id="menu">
+    <button>Stocks</button>
+    <button>Crypto</button>
+    <button>FX</button>
+  </div>
+
+  <!-- MAIN PORTFOLIO -->
+  <main>
+    <h2>Portfolio</h2>
+    <table id="portfolio-table">
+      <thead>
+        <tr>
+          <th>Asset</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Portfolio rows will populate here -->
+      </tbody>
+    </table>
+
+    <!-- TRADE BUTTONS -->
+    <div id="trade-section">
+      <button class="trade-btn">Buy</button>
+      <button class="trade-btn">Sell</button>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="bank-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Bank_of_Libya_logo.png" alt="Bank of Libya">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Libyan_Banking_Logo.png" alt="Chase Bank Libya">
+    </div>
+    <div class="contact">
+      Phone: +218 21 123 4567 | Email: info@globaltrade.com | Website: www.globaltrade.com
+    </div>
+    <p>Disclaimer: This is a simulation for educational purposes only. No real money is involved.</p>
+  </footer>
+
+  <!-- JS Files -->
+  <script src="stocks.js"></script>
+  <script src="crypto.js"></script>
+  <script src="fx.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
